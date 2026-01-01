@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "clientrium",
+	"version": "${version}",
+	"name": "Clientrium",
+	"description": "This is a client-side mod made by Warrox",
+	"authors": [
+		"Warrox"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/clientrium/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"be.warrox.clientrium.Clientrium"
+		],
+		"client": [
+			"be.warrox.clientrium.ClientriumClient"
+		],
+		"fabric-datagen": [
+			"be.warrox.clientrium.ClientriumDataGenerator"
+		]
+	},
+	"mixins": [
+		"clientrium.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
